@@ -1,0 +1,3 @@
+[submodule "Dependencies/DeltaCore"]
+	path = Dependencies/DeltaCore
+	url = https://github.com/rileytestut/DeltaCore.git
