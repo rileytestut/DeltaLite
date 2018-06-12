@@ -1,3 +1,6 @@
 [submodule "Dependencies/DeltaCore"]
 	path = Dependencies/DeltaCore
 	url = https://github.com/rileytestut/DeltaCore.git
+[submodule "Dependencies/NESDeltaCore"]
+	path = Dependencies/NESDeltaCore
+	url = https://github.com/rileytestut/NESDeltaCore.git

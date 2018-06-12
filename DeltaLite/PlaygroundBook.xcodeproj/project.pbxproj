@@ -20,6 +20,8 @@
 		5EF2F9AE2054BBF300191409 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2F9AD2054BBF300191409 /* LiveViewController.swift */; };
 		5EF2F9B72054E6FB00191409 /* Chapters in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9B62054E6F900191409 /* Chapters */; };
 		5EF2F9B82054E6FE00191409 /* Sources in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9A52054BBB200191409 /* Sources */; };
+		BFAC941120D06FE600904D49 /* nestopia.js in Resources */ = {isa = PBXBuildFile; fileRef = BFAC941020D06FE600904D49 /* nestopia.js */; };
+		BFAC941220D0718700904D49 /* NESDeltaCore in Copy Delta Files */ = {isa = PBXBuildFile; fileRef = BFD7727920D068DC003D3AF9 /* NESDeltaCore */; };
 		BFD7723B20D061FB003D3AF9 /* FilterChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD771FE20D061FB003D3AF9 /* FilterChain.swift */; };
 		BFD7723C20D061FB003D3AF9 /* SamplerFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD771FF20D061FB003D3AF9 /* SamplerFilter.swift */; };
 		BFD7723D20D061FB003D3AF9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7720120D061FB003D3AF9 /* GameView.swift */; };
@@ -72,6 +74,10 @@
 		BFD7727520D0623E003D3AF9 /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7726E20D0623E003D3AF9 /* Data+Serialization.swift */; };
 		BFD7727620D0623E003D3AF9 /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7726F20D0623E003D3AF9 /* FileManager+ZIP.swift */; };
 		BFD7727720D0624F003D3AF9 /* ZIPFoundation in Copy Delta Files */ = {isa = PBXBuildFile; fileRef = BFD7726720D06225003D3AF9 /* ZIPFoundation */; };
+		BFD7728D20D06914003D3AF9 /* Standard.deltaskin in Resources */ = {isa = PBXBuildFile; fileRef = BFD7728120D06914003D3AF9 /* Standard.deltaskin */; };
+		BFD7728E20D06914003D3AF9 /* Standard.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BFD7728220D06914003D3AF9 /* Standard.deltamapping */; };
+		BFD7728F20D06914003D3AF9 /* NESEmulatorBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7728420D06914003D3AF9 /* NESEmulatorBridge.swift */; };
+		BFD7729020D06914003D3AF9 /* NES.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7728520D06914003D3AF9 /* NES.swift */; };
 		BFD7729320D06B3D003D3AF9 /* MFiGameController.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BFD7721420D061FB003D3AF9 /* MFiGameController.deltamapping */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +152,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Sources";
 			dstSubfolderSpec = 16;
 			files = (
+				BFAC941220D0718700904D49 /* NESDeltaCore in Copy Delta Files */,
 				BFD7727720D0624F003D3AF9 /* ZIPFoundation in Copy Delta Files */,
 				BFD7726620D06209003D3AF9 /* DeltaCore in Copy Delta Files */,
 			);
@@ -176,6 +183,7 @@
 		5EF2F9AB2054BBF300191409 /* libBook_Sources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBook_Sources.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF2F9AD2054BBF300191409 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		5EF2F9B62054E6F900191409 /* Chapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chapters; sourceTree = "<group>"; };
+		BFAC941020D06FE600904D49 /* nestopia.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = nestopia.js; path = ../NestopiaJS/nestopia.js; sourceTree = "<group>"; };
 		BFD771FB20D061D7003D3AF9 /* DeltaCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DeltaCore; path = ../../Dependencies/DeltaCore/DeltaCore; sourceTree = "<group>"; };
 		BFD771FE20D061FB003D3AF9 /* FilterChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterChain.swift; sourceTree = "<group>"; };
 		BFD771FF20D061FB003D3AF9 /* SamplerFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplerFilter.swift; sourceTree = "<group>"; };
@@ -231,6 +239,13 @@
 		BFD7726D20D0623E003D3AF9 /* Archive+Writing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Archive+Writing.swift"; sourceTree = "<group>"; };
 		BFD7726E20D0623E003D3AF9 /* Data+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Serialization.swift"; sourceTree = "<group>"; };
 		BFD7726F20D0623E003D3AF9 /* FileManager+ZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ZIP.swift"; sourceTree = "<group>"; };
+		BFD7727920D068DC003D3AF9 /* NESDeltaCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NESDeltaCore; path = ../../Dependencies/NESDeltaCore/NESDeltaCore; sourceTree = "<group>"; };
+		BFD7728120D06914003D3AF9 /* Standard.deltaskin */ = {isa = PBXFileReference; lastKnownFileType = file; path = Standard.deltaskin; sourceTree = "<group>"; };
+		BFD7728220D06914003D3AF9 /* Standard.deltamapping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Standard.deltamapping; sourceTree = "<group>"; };
+		BFD7728420D06914003D3AF9 /* NESEmulatorBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NESEmulatorBridge.swift; sourceTree = "<group>"; };
+		BFD7728520D06914003D3AF9 /* NES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NES.swift; sourceTree = "<group>"; };
+		BFD7728620D06914003D3AF9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD7728720D06914003D3AF9 /* NESDeltaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESDeltaCore.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +388,7 @@
 				5EF2F9AD2054BBF300191409 /* LiveViewController.swift */,
 				5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */,
 				BFD771FC20D061FB003D3AF9 /* DeltaCore */,
+				BFD7727A20D06914003D3AF9 /* NESDeltaCore */,
 				BFD7726820D0623E003D3AF9 /* ZIPFoundation */,
 			);
 			path = Sources;
@@ -383,6 +399,7 @@
 			children = (
 				5EF2F9A52054BBB200191409 /* Sources */,
 				BFD771FB20D061D7003D3AF9 /* DeltaCore */,
+				BFD7727920D068DC003D3AF9 /* NESDeltaCore */,
 				BFD7726720D06225003D3AF9 /* ZIPFoundation */,
 			);
 			name = "Supporting Content";
@@ -585,6 +602,45 @@
 			path = ../../../Dependencies/DeltaCore/External/ZIPFoundation/Sources/ZIPFoundation;
 			sourceTree = "<group>";
 		};
+		BFD7727A20D06914003D3AF9 /* NESDeltaCore */ = {
+			isa = PBXGroup;
+			children = (
+				BFD7728720D06914003D3AF9 /* NESDeltaCore.h */,
+				BFD7728520D06914003D3AF9 /* NES.swift */,
+				BFD7728320D06914003D3AF9 /* Bridge */,
+				BFD7729420D06FC0003D3AF9 /* nestopia */,
+				BFD7729220D069B0003D3AF9 /* Supporting Files */,
+			);
+			name = NESDeltaCore;
+			path = ../../../Dependencies/NESDeltaCore/NESDeltaCore;
+			sourceTree = "<group>";
+		};
+		BFD7728320D06914003D3AF9 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				BFD7728420D06914003D3AF9 /* NESEmulatorBridge.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		BFD7729220D069B0003D3AF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFD7728620D06914003D3AF9 /* Info.plist */,
+				BFD7728120D06914003D3AF9 /* Standard.deltaskin */,
+				BFD7728220D06914003D3AF9 /* Standard.deltamapping */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFD7729420D06FC0003D3AF9 /* nestopia */ = {
+			isa = PBXGroup;
+			children = (
+				BFAC941020D06FE600904D49 /* nestopia.js */,
+			);
+			name = nestopia;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -690,8 +746,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
-				BFD7729320D06B3D003D3AF9 /* MFiGameController.deltamapping in Resources */,
 				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
+				BFD7729320D06B3D003D3AF9 /* MFiGameController.deltamapping in Resources */,
+				BFD7728D20D06914003D3AF9 /* Standard.deltaskin in Resources */,
+				BFD7728E20D06914003D3AF9 /* Standard.deltamapping in Resources */,
+				BFAC941120D06FE600904D49 /* nestopia.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +818,7 @@
 				BFD7725520D061FB003D3AF9 /* VideoManager.swift in Sources */,
 				BFD7723B20D061FB003D3AF9 /* FilterChain.swift in Sources */,
 				BFD7725F20D061FB003D3AF9 /* VideoRendering.swift in Sources */,
+				BFD7728F20D06914003D3AF9 /* NESEmulatorBridge.swift in Sources */,
 				BFD7725920D061FB003D3AF9 /* EmulatorCore.swift in Sources */,
 				BFD7727120D0623E003D3AF9 /* Archive+Reading.swift in Sources */,
 				BFD7723E20D061FB003D3AF9 /* GameViewController.swift in Sources */,
@@ -768,6 +828,7 @@
 				BFD7727520D0623E003D3AF9 /* Data+Serialization.swift in Sources */,
 				BFD7726520D061FB003D3AF9 /* EmulatorBridging.swift in Sources */,
 				BFD7727420D0623E003D3AF9 /* Archive+Writing.swift in Sources */,
+				BFD7729020D06914003D3AF9 /* NES.swift in Sources */,
 				BFD7726020D061FB003D3AF9 /* AudioRendering.swift in Sources */,
 				BFD7724C20D061FB003D3AF9 /* Game.swift in Sources */,
 				BFD7724A20D061FB003D3AF9 /* UIImage+PDF.swift in Sources */,
