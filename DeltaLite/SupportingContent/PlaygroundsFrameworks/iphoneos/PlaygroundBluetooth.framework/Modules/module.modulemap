@@ -1,0 +1,11 @@
+framework module PlaygroundBluetooth {
+  umbrella header "PlaygroundBluetooth.h"
+
+  export *
+  module * { export * }
+}
+
+module PlaygroundBluetooth.Swift {
+    header "PlaygroundBluetooth-Swift.h"
+    requires objc
+}

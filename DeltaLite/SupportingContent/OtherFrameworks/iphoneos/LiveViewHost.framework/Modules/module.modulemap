@@ -1,0 +1,11 @@
+framework module LiveViewHost {
+  umbrella header "LiveViewHost.h"
+
+  export *
+  module * { export * }
+}
+
+module LiveViewHost.Swift {
+    header "LiveViewHost-Swift.h"
+    requires objc
+}
