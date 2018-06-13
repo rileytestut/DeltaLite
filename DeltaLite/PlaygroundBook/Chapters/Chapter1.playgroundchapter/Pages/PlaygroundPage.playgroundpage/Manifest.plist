@@ -6,6 +6,8 @@
 	<string>ChapterOnePageOneName</string>
 	<key>LiveViewEdgeToEdge</key>
 	<true/>
+	<key>PlaygroundLoggingMode</key>
+	<string>Off</string>
 	<key>LiveViewMode</key>
 	<string>VisibleByDefault</string>
 </dict>

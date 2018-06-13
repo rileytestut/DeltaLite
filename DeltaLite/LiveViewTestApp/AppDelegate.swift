@@ -11,22 +11,50 @@ import LiveViewHost
 import Book_Sources
 
 @UIApplicationMain
-class AppDelegate: LiveViewHost.AppDelegate {
-    override func setUpLiveView() -> PlaygroundLiveViewable {
-        // This method should return a fully-configured live view. This method must be implemented.
-        //
-        // The view or view controller returned from this method will be automatically be shown on screen,
-        // as if it were a live view in Swift Playgrounds. You can control how the live view is shown by
-        // changing the implementation of the `liveViewConfiguration` property below.
-        return Book_Sources.instantiateLiveView()
-    }
-
+class AppDelegate: LiveViewHost.AppDelegate
+{
+    static var liveView: LiveGameViewController?
+    
     override var liveViewConfiguration: LiveViewConfiguration {
-        // Make this property return the configuration of the live view which you desire to test.
-        //
-        // Valid values are `.fullScreen`, which simulates when the user has expanded the live
-        // view to fill the full screen in Swift Playgrounds, and `.sideBySide`, which simulates when
-        // the live view is shown next to or above the source code editor in Swift Playgrounds.
         return .sideBySide
+    }
+    
+    override func setUpLiveView() -> PlaygroundLiveViewable
+    {
+        let liveView = Book_Sources.instantiateLiveView()
+        AppDelegate.liveView = liveView as? LiveGameViewController
+        return liveView
+    }
+    
+    override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]?) -> Bool
+    {
+        guard super.application(application, didFinishLaunchingWithOptions: launchOptions) else { return false }
+        
+        self.prepareViewController()
+        
+        return true
+    }
+}
+
+private extension AppDelegate
+{
+    func prepareViewController()
+    {
+        guard let window = UIApplication.shared.keyWindow, let rootViewController = window.rootViewController, let liveView = rootViewController.view.subviews.first else { return }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let viewController = storyboard.instantiateInitialViewController() as! ViewController
+        viewController.definesPresentationContext = true
+        viewController.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        rootViewController.addChildViewController(viewController)
+        rootViewController.view.addSubview(viewController.view)
+        viewController.didMove(toParentViewController: rootViewController)
+        
+        NSLayoutConstraint.activate([viewController.view.leadingAnchor.constraint(equalTo: rootViewController.view.leadingAnchor),
+                                     viewController.view.trailingAnchor.constraint(equalTo: liveView.leadingAnchor),
+                                     viewController.view.topAnchor.constraint(equalTo: rootViewController.view.topAnchor),
+                                     viewController.view.bottomAnchor.constraint(equalTo: rootViewController.view.bottomAnchor)])
     }
 }

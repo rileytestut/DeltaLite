@@ -6,4 +6,26 @@
 //  The Swift file containing the source code edited by the user of this playground book.
 //
 //#-end-hidden-code
-let str = "Hello, playground"
+//#-hidden-code
+
+import Foundation
+import PlaygroundSupport
+
+func play(_ gameURL: URL)
+{
+    let proxy = PlaygroundPage.current.liveView as! PlaygroundRemoteLiveViewProxy
+    
+    do
+    {
+        let bookmark = try gameURL.bookmarkData()
+        proxy.send(.data(bookmark))
+    }
+    catch
+    {
+        print(error)
+    }
+}
+
+//#-end-hidden-code
+let game = #fileLiteral(resourceName: "")
+play(game)
