@@ -10,8 +10,20 @@ import UIKit
 import PlaygroundSupport
 
 @objc(Book_Sources_LiveGameViewController)
-public class LiveGameViewController: GameViewController, PlaygroundLiveViewMessageHandler, PlaygroundLiveViewSafeAreaContainer
+public class LiveGameViewController: DLTAGameViewController, PlaygroundLiveViewMessageHandler, PlaygroundLiveViewSafeAreaContainer
 {
+    public required init?(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)
+        
+        self.delegate = self
+        self.definesPresentationContext = true
+    }
+    
+    public required init() {
+        fatalError("init() has not been implemented")
+    }
+    
     public override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -25,9 +37,7 @@ public class LiveGameViewController: GameViewController, PlaygroundLiveViewMessa
         
         if Delta.core(for: .nes) == nil
         {
-            NESEmulatorBridge.applicationWindow = self.view.window
-            
-            Delta.register(NES.core)
+            self.prepare()
         }
     }
     
@@ -40,19 +50,22 @@ public class LiveGameViewController: GameViewController, PlaygroundLiveViewMessa
             var isStale = false
             guard let fileURL = try URL(resolvingBookmarkData: bookmark, bookmarkDataIsStale: &isStale) else { return }
             
-            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            
-            let gameURL = documentsDirectory.appendingPathComponent(fileURL.lastPathComponent)
-            
-            if FileManager.default.fileExists(atPath: gameURL.path)
-            {
-                try FileManager.default.removeItem(at: gameURL)
+            DatabaseManager.shared.importGames(at: [fileURL]) { (importedGames, errors) in
+                if errors.count > 0
+                {
+                    print(errors)
+                }
+                
+                if importedGames.count > 0
+                {
+                    print("Imported Games:", importedGames)
+                }
+                
+                if let game = importedGames.first
+                {
+                    self.play(game)
+                }
             }
-            
-            try FileManager.default.copyItem(at: fileURL, to: gameURL)
-            
-            let game = Game(fileURL: gameURL, type: .nes)
-            self.play(game)
         }
         catch
         {
@@ -63,7 +76,21 @@ public class LiveGameViewController: GameViewController, PlaygroundLiveViewMessa
 
 private extension LiveGameViewController
 {
-    func play(_ game: Game)
+    func prepare()
+    {
+        self.view.window?.tintColor = .deltaPurple
+        NESEmulatorBridge.applicationWindow = self.view.window
+        
+        Delta.register(NES.core)
+        
+        DatabaseManager.shared.loadPersistentStores { (description, error) in
+        }
+    }
+}
+
+private extension LiveGameViewController
+{
+    func play(_ game: NESGame)
     {
         self.game = game
         

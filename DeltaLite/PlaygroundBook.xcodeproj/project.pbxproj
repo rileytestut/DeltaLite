@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */; };
 		5E086DD32051E3A3004D8D25 /* Manifest.plist in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5E086DCF2051DF0F004D8D25 /* Manifest.plist */; };
 		5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */; };
 		5EA2E3C02056F35A00416A35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA2E3BF2056F35A00416A35 /* AppDelegate.swift */; };
@@ -16,15 +15,74 @@
 		5EA2E3DA2056F8D100416A35 /* PlaygroundBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA2E3D82056F88700416A35 /* PlaygroundBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5EA2E3DB2056F8D100416A35 /* PlaygroundSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA2E3D72056F88700416A35 /* PlaygroundSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5EBEC2F0205B399300975D3F /* LiveViewHost.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBEC2EF205B396500975D3F /* LiveViewHost.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2F97E2054B6E400191409 /* ManifestPlist.strings */; };
 		5EF2F9AE2054BBF300191409 /* LiveGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2F9AD2054BBF300191409 /* LiveGameViewController.swift */; };
 		5EF2F9B72054E6FB00191409 /* Chapters in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9B62054E6F900191409 /* Chapters */; };
 		5EF2F9B82054E6FE00191409 /* Sources in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9A52054BBB200191409 /* Sources */; };
-		BFAC941120D06FE600904D49 /* nestopia.js in Resources */ = {isa = PBXBuildFile; fileRef = BFAC941020D06FE600904D49 /* nestopia.js */; };
+		BF7AB29B20D0B55000A678D6 /* GridMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29720D0B54F00A678D6 /* GridMenuViewController.swift */; };
+		BF7AB29C20D0B55000A678D6 /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29920D0B55000A678D6 /* PauseViewController.swift */; };
+		BF7AB29D20D0B55000A678D6 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29A20D0B55000A678D6 /* MenuItem.swift */; };
+		BF7AB2A020D0B56900A678D6 /* GridCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29E20D0B56800A678D6 /* GridCollectionViewLayout.swift */; };
+		BF7AB2A120D0B56900A678D6 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29F20D0B56800A678D6 /* GridCollectionViewCell.swift */; };
+		BF7AB2A520D0B59A00A678D6 /* PausePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2A320D0B59A00A678D6 /* PausePresentationController.swift */; };
+		BF7AB2A920D0B5AC00A678D6 /* PauseStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2A720D0B5AC00A678D6 /* PauseStoryboardSegue.swift */; };
+		BF7AB2AA20D0B5AC00A678D6 /* PauseTransitionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2A820D0B5AC00A678D6 /* PauseTransitionCoordinator.swift */; };
+		BF7AB2AD20D0B9C900A678D6 /* Roxas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2AC20D0B9C900A678D6 /* Roxas.swift */; };
+		BF7AB2B020D0BA0000A678D6 /* UIColor+Delta.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2AF20D0BA0000A678D6 /* UIColor+Delta.swift */; };
+		BF7AB2B220D0BD7000A678D6 /* UILabel+FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2B120D0BD7000A678D6 /* UILabel+FontSize.swift */; };
+		BF7AB2BB20D0C40000A678D6 /* DeltaCoreProtocol+Delta.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2BA20D0C40000A678D6 /* DeltaCoreProtocol+Delta.swift */; };
+		BF7AB2BE20D0C43900A678D6 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2BD20D0C43900A678D6 /* System.swift */; };
+		BF7AB2C220D0FF4E00A678D6 /* RSTCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2C120D0FF4E00A678D6 /* RSTCellContentView.swift */; };
+		BF7AB2C420D104C200A678D6 /* RSTCollectionViewChangeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2C320D104C200A678D6 /* RSTCollectionViewChangeOperation.swift */; };
+		BF7AB2C620D106CB00A678D6 /* RSTCellContentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2C520D106CB00A678D6 /* RSTCellContentDataSource.swift */; };
+		BF7AB2C820D10FC200A678D6 /* RSTOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB2C720D10FC200A678D6 /* RSTOperationQueue.swift */; };
 		BFAC941220D0718700904D49 /* NESDeltaCore in Copy Delta Files */ = {isa = PBXBuildFile; fileRef = BFD7727920D068DC003D3AF9 /* NESDeltaCore */; };
 		BFAC941720D0812400904D49 /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */; };
 		BFAC941920D083BA00904D49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAC941820D083BA00904D49 /* ViewController.swift */; };
 		BFAC941B20D0840100904D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFAC941A20D0840100904D49 /* Main.storyboard */; };
+		BFCE06A420D1BA3D0095048E /* RSTFetchedResultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06A320D1BA3D0095048E /* RSTFetchedResultsDataSource.swift */; };
+		BFCE06AA20D1BF570095048E /* RSTPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06A920D1BF570095048E /* RSTPlaceholderView.swift */; };
+		BFCE06AE20D1C0740095048E /* SaveStatesCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06AC20D1C0730095048E /* SaveStatesCollectionHeaderView.swift */; };
+		BFCE06AF20D1C0740095048E /* SaveStatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06AD20D1C0740095048E /* SaveStatesViewController.swift */; };
+		BFCE06B220D1C50B0095048E /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06B120D1C50B0095048E /* DatabaseManager.swift */; };
+		BFCE06CE20D1C5240095048E /* _Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06C820D1C5240095048E /* _Game.swift */; };
+		BFCE06CF20D1C5240095048E /* _SaveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06C920D1C5240095048E /* _SaveState.swift */; };
+		BFCE06D020D1C5240095048E /* _Cheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06CA20D1C5240095048E /* _Cheat.swift */; };
+		BFCE06D320D1C6140095048E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06D220D1C6140095048E /* Action.swift */; };
+		BFCE06D620D1C6250095048E /* NSManagedObject+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06D420D1C6250095048E /* NSManagedObject+Conveniences.swift */; };
+		BFCE06D720D1C6250095048E /* NSManagedObjectContext+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06D520D1C6250095048E /* NSManagedObjectContext+Conveniences.swift */; };
+		BFCE06D920D1C8BC0095048E /* LoadImageURLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06D820D1C8BC0095048E /* LoadImageURLOperation.swift */; };
+		BFCE06DD20D1CA850095048E /* UIViewController+TransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06DC20D1CA850095048E /* UIViewController+TransitionState.swift */; };
+		BFCE06E020D1CB410095048E /* FileManager+Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06DF20D1CB410095048E /* FileManager+Conveniences.swift */; };
+		BFCE06E220D1CDBF0095048E /* DLTAGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06E120D1CDBF0095048E /* DLTAGameViewController.swift */; };
+		BFCE06E520D1CE840095048E /* ActionInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06E420D1CE830095048E /* ActionInput.swift */; };
+		BFCE06E720D1CEB80095048E /* EmulatorCore+Cheats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06E620D1CEB80095048E /* EmulatorCore+Cheats.swift */; };
+		BFCE06EC20D1E23F0095048E /* NESCheat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06E920D1E23F0095048E /* NESCheat.swift */; };
+		BFCE06ED20D1E23F0095048E /* NESGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06EA20D1E23F0095048E /* NESGame.swift */; };
+		BFCE06EE20D1E23F0095048E /* NESSaveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06EB20D1E23F0095048E /* NESSaveState.swift */; };
+		BFCE06F220D1E2520095048E /* Delta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06EF20D1E2520095048E /* Delta.xcdatamodeld */; };
+		BFCE06F920D2224F0095048E /* EditCheatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06F420D2224D0095048E /* EditCheatViewController.swift */; };
+		BFCE06FA20D2224F0095048E /* CheatValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06F520D2224D0095048E /* CheatValidator.swift */; };
+		BFCE06FB20D2224F0095048E /* CheatTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06F620D2224E0095048E /* CheatTextView.swift */; };
+		BFCE06FC20D2224F0095048E /* CheatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06F720D2224F0095048E /* CheatsViewController.swift */; };
+		BFCE06FD20D2224F0095048E /* CheatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE06F820D2224F0095048E /* CheatTableViewCell.swift */; };
+		BFCE071D20D23C3F0095048E /* RSTPlaceholderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFCE06A620D1BF470095048E /* RSTPlaceholderView.xib */; };
+		BFCE071E20D23C3F0095048E /* Delta.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = BFCE06EF20D1E2520095048E /* Delta.xcdatamodeld */; };
+		BFCE071F20D23C3F0095048E /* PausePresentationControllerContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7AB2A420D0B59A00A678D6 /* PausePresentationControllerContentView.xib */; };
+		BFCE072020D23C3F0095048E /* PauseMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7AB29820D0B55000A678D6 /* PauseMenu.storyboard */; };
+		BFCE072120D23C3F0095048E /* MFiGameController.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BFD7721420D061FB003D3AF9 /* MFiGameController.deltamapping */; };
+		BFCE072220D23C3F0095048E /* nestopia.js in Resources */ = {isa = PBXBuildFile; fileRef = BFAC941020D06FE600904D49 /* nestopia.js */; };
+		BFCE072320D23C3F0095048E /* Standard.deltaskin in Resources */ = {isa = PBXBuildFile; fileRef = BFD7728120D06914003D3AF9 /* Standard.deltaskin */; };
+		BFCE072420D23C3F0095048E /* Standard.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BFD7728220D06914003D3AF9 /* Standard.deltamapping */; };
+		BFCE072520D23C3F0095048E /* ManifestPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2F97E2054B6E400191409 /* ManifestPlist.strings */; };
+		BFCE072620D23C3F0095048E /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */; };
+		BFCE073E20D23DFC0095048E /* Pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE073820D23DFA0095048E /* Pause@2x.png */; };
+		BFCE073F20D23DFC0095048E /* LoadSaveState@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE073920D23DFA0095048E /* LoadSaveState@2x.png */; };
+		BFCE074020D23DFC0095048E /* CheatCodes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE073A20D23DFB0095048E /* CheatCodes@2x.png */; };
+		BFCE074120D23DFC0095048E /* FastForward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE073B20D23DFB0095048E /* FastForward@2x.png */; };
+		BFCE074220D23DFC0095048E /* SaveSaveState@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE073C20D23DFC0095048E /* SaveSaveState@2x.png */; };
+		BFCE074320D23DFC0095048E /* SustainButtons@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFCE073D20D23DFC0095048E /* SustainButtons@2x.png */; };
+		BFCE074420D24F6A0095048E /* PauseMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7AB29820D0B55000A678D6 /* PauseMenu.storyboard */; };
+		BFCE074F20D25B580095048E /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE074E20D25B570095048E /* SHA1.swift */; };
 		BFD7723B20D061FB003D3AF9 /* FilterChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD771FE20D061FB003D3AF9 /* FilterChain.swift */; };
 		BFD7723C20D061FB003D3AF9 /* SamplerFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD771FF20D061FB003D3AF9 /* SamplerFilter.swift */; };
 		BFD7723D20D061FB003D3AF9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7720120D061FB003D3AF9 /* GameView.swift */; };
@@ -77,11 +135,8 @@
 		BFD7727520D0623E003D3AF9 /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7726E20D0623E003D3AF9 /* Data+Serialization.swift */; };
 		BFD7727620D0623E003D3AF9 /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7726F20D0623E003D3AF9 /* FileManager+ZIP.swift */; };
 		BFD7727720D0624F003D3AF9 /* ZIPFoundation in Copy Delta Files */ = {isa = PBXBuildFile; fileRef = BFD7726720D06225003D3AF9 /* ZIPFoundation */; };
-		BFD7728D20D06914003D3AF9 /* Standard.deltaskin in Resources */ = {isa = PBXBuildFile; fileRef = BFD7728120D06914003D3AF9 /* Standard.deltaskin */; };
-		BFD7728E20D06914003D3AF9 /* Standard.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BFD7728220D06914003D3AF9 /* Standard.deltamapping */; };
 		BFD7728F20D06914003D3AF9 /* NESEmulatorBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7728420D06914003D3AF9 /* NESEmulatorBridge.swift */; };
 		BFD7729020D06914003D3AF9 /* NES.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7728520D06914003D3AF9 /* NES.swift */; };
-		BFD7729320D06B3D003D3AF9 /* MFiGameController.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BFD7721420D061FB003D3AF9 /* MFiGameController.deltamapping */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -95,6 +150,16 @@
 				"$(DERIVED_FILE_DIR)/$(INPUT_FILE_NAME)",
 			);
 			script = "mkdir -p \"${DERIVED_FILE_DIR}\"\n\n\"${PROJECT_DIR}\"/SupportingContent/Tools/expandBuildSettingReferences --output \"${SCRIPT_OUTPUT_FILE_0}\" --use-environment \"${SCRIPT_INPUT_FILE}\"\n";
+		};
+		BFCE070C20D235340095048E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.assetcatalog;
+			filePatterns = "*.xcassets";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "echo \"Hello World\"";
 		};
 /* End PBXBuildRule section */
 
@@ -186,9 +251,64 @@
 		5EF2F9AB2054BBF300191409 /* libBook_Sources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBook_Sources.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF2F9AD2054BBF300191409 /* LiveGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveGameViewController.swift; sourceTree = "<group>"; };
 		5EF2F9B62054E6F900191409 /* Chapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chapters; sourceTree = "<group>"; };
+		BF7AB29720D0B54F00A678D6 /* GridMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridMenuViewController.swift; sourceTree = "<group>"; };
+		BF7AB29820D0B55000A678D6 /* PauseMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PauseMenu.storyboard; sourceTree = "<group>"; };
+		BF7AB29920D0B55000A678D6 /* PauseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
+		BF7AB29A20D0B55000A678D6 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		BF7AB29E20D0B56800A678D6 /* GridCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewLayout.swift; sourceTree = "<group>"; };
+		BF7AB29F20D0B56800A678D6 /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF7AB2A320D0B59A00A678D6 /* PausePresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PausePresentationController.swift; sourceTree = "<group>"; };
+		BF7AB2A420D0B59A00A678D6 /* PausePresentationControllerContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PausePresentationControllerContentView.xib; sourceTree = "<group>"; };
+		BF7AB2A720D0B5AC00A678D6 /* PauseStoryboardSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseStoryboardSegue.swift; sourceTree = "<group>"; };
+		BF7AB2A820D0B5AC00A678D6 /* PauseTransitionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseTransitionCoordinator.swift; sourceTree = "<group>"; };
+		BF7AB2AC20D0B9C900A678D6 /* Roxas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roxas.swift; sourceTree = "<group>"; };
+		BF7AB2AF20D0BA0000A678D6 /* UIColor+Delta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Delta.swift"; sourceTree = "<group>"; };
+		BF7AB2B120D0BD7000A678D6 /* UILabel+FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+FontSize.swift"; sourceTree = "<group>"; };
+		BF7AB2BA20D0C40000A678D6 /* DeltaCoreProtocol+Delta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeltaCoreProtocol+Delta.swift"; sourceTree = "<group>"; };
+		BF7AB2BD20D0C43900A678D6 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		BF7AB2C120D0FF4E00A678D6 /* RSTCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTCellContentView.swift; sourceTree = "<group>"; };
+		BF7AB2C320D104C200A678D6 /* RSTCollectionViewChangeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTCollectionViewChangeOperation.swift; sourceTree = "<group>"; };
+		BF7AB2C520D106CB00A678D6 /* RSTCellContentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTCellContentDataSource.swift; sourceTree = "<group>"; };
+		BF7AB2C720D10FC200A678D6 /* RSTOperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTOperationQueue.swift; sourceTree = "<group>"; };
 		BFAC941020D06FE600904D49 /* nestopia.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = nestopia.js; path = ../NestopiaJS/nestopia.js; sourceTree = "<group>"; };
 		BFAC941820D083BA00904D49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFAC941A20D0840100904D49 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BFCE06A320D1BA3D0095048E /* RSTFetchedResultsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTFetchedResultsDataSource.swift; sourceTree = "<group>"; };
+		BFCE06A620D1BF470095048E /* RSTPlaceholderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSTPlaceholderView.xib; sourceTree = "<group>"; };
+		BFCE06A920D1BF570095048E /* RSTPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSTPlaceholderView.swift; sourceTree = "<group>"; };
+		BFCE06AC20D1C0730095048E /* SaveStatesCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveStatesCollectionHeaderView.swift; sourceTree = "<group>"; };
+		BFCE06AD20D1C0740095048E /* SaveStatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveStatesViewController.swift; sourceTree = "<group>"; };
+		BFCE06B120D1C50B0095048E /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		BFCE06C820D1C5240095048E /* _Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Game.swift; sourceTree = "<group>"; };
+		BFCE06C920D1C5240095048E /* _SaveState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _SaveState.swift; sourceTree = "<group>"; };
+		BFCE06CA20D1C5240095048E /* _Cheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Cheat.swift; sourceTree = "<group>"; };
+		BFCE06D220D1C6140095048E /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		BFCE06D420D1C6250095048E /* NSManagedObject+Conveniences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Conveniences.swift"; sourceTree = "<group>"; };
+		BFCE06D520D1C6250095048E /* NSManagedObjectContext+Conveniences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Conveniences.swift"; sourceTree = "<group>"; };
+		BFCE06D820D1C8BC0095048E /* LoadImageURLOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadImageURLOperation.swift; sourceTree = "<group>"; };
+		BFCE06DC20D1CA850095048E /* UIViewController+TransitionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TransitionState.swift"; sourceTree = "<group>"; };
+		BFCE06DF20D1CB410095048E /* FileManager+Conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Conveniences.swift"; sourceTree = "<group>"; };
+		BFCE06E120D1CDBF0095048E /* DLTAGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLTAGameViewController.swift; sourceTree = "<group>"; };
+		BFCE06E420D1CE830095048E /* ActionInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionInput.swift; sourceTree = "<group>"; };
+		BFCE06E620D1CEB80095048E /* EmulatorCore+Cheats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EmulatorCore+Cheats.swift"; sourceTree = "<group>"; };
+		BFCE06E920D1E23F0095048E /* NESCheat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NESCheat.swift; sourceTree = "<group>"; };
+		BFCE06EA20D1E23F0095048E /* NESGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NESGame.swift; sourceTree = "<group>"; };
+		BFCE06EB20D1E23F0095048E /* NESSaveState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NESSaveState.swift; sourceTree = "<group>"; };
+		BFCE06F020D1E2520095048E /* Delta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Delta.xcdatamodel; sourceTree = "<group>"; };
+		BFCE06F120D1E2520095048E /* Delta 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Delta 2.xcdatamodel"; sourceTree = "<group>"; };
+		BFCE06F420D2224D0095048E /* EditCheatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCheatViewController.swift; sourceTree = "<group>"; };
+		BFCE06F520D2224D0095048E /* CheatValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheatValidator.swift; sourceTree = "<group>"; };
+		BFCE06F620D2224E0095048E /* CheatTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheatTextView.swift; sourceTree = "<group>"; };
+		BFCE06F720D2224F0095048E /* CheatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheatsViewController.swift; sourceTree = "<group>"; };
+		BFCE06F820D2224F0095048E /* CheatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheatTableViewCell.swift; sourceTree = "<group>"; };
+		BFCE071320D236C20095048E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCE073820D23DFA0095048E /* Pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause@2x.png"; sourceTree = "<group>"; };
+		BFCE073920D23DFA0095048E /* LoadSaveState@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoadSaveState@2x.png"; sourceTree = "<group>"; };
+		BFCE073A20D23DFB0095048E /* CheatCodes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheatCodes@2x.png"; sourceTree = "<group>"; };
+		BFCE073B20D23DFB0095048E /* FastForward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FastForward@2x.png"; sourceTree = "<group>"; };
+		BFCE073C20D23DFC0095048E /* SaveSaveState@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SaveSaveState@2x.png"; sourceTree = "<group>"; };
+		BFCE073D20D23DFC0095048E /* SustainButtons@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SustainButtons@2x.png"; sourceTree = "<group>"; };
+		BFCE074E20D25B570095048E /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
 		BFD771FB20D061D7003D3AF9 /* DeltaCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DeltaCore; path = ../../Dependencies/DeltaCore/DeltaCore; sourceTree = "<group>"; };
 		BFD771FE20D061FB003D3AF9 /* FilterChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterChain.swift; sourceTree = "<group>"; };
 		BFD771FF20D061FB003D3AF9 /* SamplerFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplerFilter.swift; sourceTree = "<group>"; };
@@ -327,6 +447,7 @@
 				5E2A7AE3204F628B00F4E17A /* Config Files */,
 				5E1004BD208E7F6E00BCFE70 /* LICENSE */,
 				5EA2E3D52056F83400416A35 /* Supporting Content */,
+				BFCE071220D236C20095048E /* TestBundle */,
 				5E086DA4204F706E004D8D25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -383,6 +504,7 @@
 		5EF2F9792054B64800191409 /* PrivateResources */ = {
 			isa = PBXGroup;
 			children = (
+				BFCE072720D23C850095048E /* Assets */,
 				5EF2F97E2054B6E400191409 /* ManifestPlist.strings */,
 				5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */,
 			);
@@ -394,6 +516,9 @@
 			children = (
 				5EF2F9AD2054BBF300191409 /* LiveGameViewController.swift */,
 				5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */,
+				BFCE074E20D25B570095048E /* SHA1.swift */,
+				BF7AB2AB20D0B6C500A678D6 /* Roxas */,
+				BF7AB29620D0B52E00A678D6 /* Delta */,
 				BFD771FC20D061FB003D3AF9 /* DeltaCore */,
 				BFD7727A20D06914003D3AF9 /* NESDeltaCore */,
 				BFD7726820D0623E003D3AF9 /* ZIPFoundation */,
@@ -410,6 +535,191 @@
 				BFD7726720D06225003D3AF9 /* ZIPFoundation */,
 			);
 			name = "Supporting Content";
+			sourceTree = "<group>";
+		};
+		BF7AB29620D0B52E00A678D6 /* Delta */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06F320D2223F0095048E /* Cheats */,
+				BFCE06E320D1CE7A0095048E /* Emulation */,
+				BFCE06D120D1C6090095048E /* Components */,
+				BFCE06B020D1C4A00095048E /* Model */,
+				BFCE06AB20D1C05C0095048E /* Save States */,
+				BF7AB2BC20D0C43000A678D6 /* Systems */,
+				BF7AB2AE20D0B9E300A678D6 /* Extensions */,
+				BF7AB2A620D0B59D00A678D6 /* Segues */,
+				BF7AB2A220D0B58800A678D6 /* Presentation Controller */,
+				BF7AB29720D0B54F00A678D6 /* GridMenuViewController.swift */,
+				BF7AB29A20D0B55000A678D6 /* MenuItem.swift */,
+				BF7AB29820D0B55000A678D6 /* PauseMenu.storyboard */,
+				BF7AB29920D0B55000A678D6 /* PauseViewController.swift */,
+				BF7AB29F20D0B56800A678D6 /* GridCollectionViewCell.swift */,
+				BF7AB29E20D0B56800A678D6 /* GridCollectionViewLayout.swift */,
+			);
+			path = Delta;
+			sourceTree = "<group>";
+		};
+		BF7AB2A220D0B58800A678D6 /* Presentation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF7AB2A320D0B59A00A678D6 /* PausePresentationController.swift */,
+				BF7AB2A420D0B59A00A678D6 /* PausePresentationControllerContentView.xib */,
+			);
+			path = "Presentation Controller";
+			sourceTree = "<group>";
+		};
+		BF7AB2A620D0B59D00A678D6 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				BF7AB2A720D0B5AC00A678D6 /* PauseStoryboardSegue.swift */,
+				BF7AB2A820D0B5AC00A678D6 /* PauseTransitionCoordinator.swift */,
+			);
+			path = Segues;
+			sourceTree = "<group>";
+		};
+		BF7AB2AB20D0B6C500A678D6 /* Roxas */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06A520D1BF3B0095048E /* Placeholder View */,
+				BF7AB2AC20D0B9C900A678D6 /* Roxas.swift */,
+				BF7AB2C720D10FC200A678D6 /* RSTOperationQueue.swift */,
+				BF7AB2C520D106CB00A678D6 /* RSTCellContentDataSource.swift */,
+				BFCE06A320D1BA3D0095048E /* RSTFetchedResultsDataSource.swift */,
+				BF7AB2C120D0FF4E00A678D6 /* RSTCellContentView.swift */,
+				BF7AB2C320D104C200A678D6 /* RSTCollectionViewChangeOperation.swift */,
+				BFCE06DE20D1CA890095048E /* Extensions */,
+			);
+			path = Roxas;
+			sourceTree = "<group>";
+		};
+		BF7AB2AE20D0B9E300A678D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF7AB2BA20D0C40000A678D6 /* DeltaCoreProtocol+Delta.swift */,
+				BF7AB2B120D0BD7000A678D6 /* UILabel+FontSize.swift */,
+				BF7AB2AF20D0BA0000A678D6 /* UIColor+Delta.swift */,
+				BFCE06D420D1C6250095048E /* NSManagedObject+Conveniences.swift */,
+				BFCE06D520D1C6250095048E /* NSManagedObjectContext+Conveniences.swift */,
+				BFCE06E620D1CEB80095048E /* EmulatorCore+Cheats.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF7AB2BC20D0C43000A678D6 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				BF7AB2BD20D0C43900A678D6 /* System.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		BFCE06A520D1BF3B0095048E /* Placeholder View */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06A920D1BF570095048E /* RSTPlaceholderView.swift */,
+				BFCE06A620D1BF470095048E /* RSTPlaceholderView.xib */,
+			);
+			path = "Placeholder View";
+			sourceTree = "<group>";
+		};
+		BFCE06AB20D1C05C0095048E /* Save States */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06AD20D1C0740095048E /* SaveStatesViewController.swift */,
+				BFCE06AC20D1C0730095048E /* SaveStatesCollectionHeaderView.swift */,
+			);
+			path = "Save States";
+			sourceTree = "<group>";
+		};
+		BFCE06B020D1C4A00095048E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06B120D1C50B0095048E /* DatabaseManager.swift */,
+				BFCE06EF20D1E2520095048E /* Delta.xcdatamodeld */,
+				BFCE06E820D1E21B0095048E /* Human */,
+				BFCE06C420D1C5240095048E /* Machine */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFCE06C420D1C5240095048E /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06C820D1C5240095048E /* _Game.swift */,
+				BFCE06C920D1C5240095048E /* _SaveState.swift */,
+				BFCE06CA20D1C5240095048E /* _Cheat.swift */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
+		BFCE06D120D1C6090095048E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06D820D1C8BC0095048E /* LoadImageURLOperation.swift */,
+				BFCE06D220D1C6140095048E /* Action.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BFCE06DE20D1CA890095048E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06DC20D1CA850095048E /* UIViewController+TransitionState.swift */,
+				BFCE06DF20D1CB410095048E /* FileManager+Conveniences.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFCE06E320D1CE7A0095048E /* Emulation */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06E120D1CDBF0095048E /* DLTAGameViewController.swift */,
+				BFCE06E420D1CE830095048E /* ActionInput.swift */,
+			);
+			path = Emulation;
+			sourceTree = "<group>";
+		};
+		BFCE06E820D1E21B0095048E /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06E920D1E23F0095048E /* NESCheat.swift */,
+				BFCE06EA20D1E23F0095048E /* NESGame.swift */,
+				BFCE06EB20D1E23F0095048E /* NESSaveState.swift */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		BFCE06F320D2223F0095048E /* Cheats */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE06F720D2224F0095048E /* CheatsViewController.swift */,
+				BFCE06F820D2224F0095048E /* CheatTableViewCell.swift */,
+				BFCE06F620D2224E0095048E /* CheatTextView.swift */,
+				BFCE06F520D2224D0095048E /* CheatValidator.swift */,
+				BFCE06F420D2224D0095048E /* EditCheatViewController.swift */,
+			);
+			path = Cheats;
+			sourceTree = "<group>";
+		};
+		BFCE071220D236C20095048E /* TestBundle */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE071320D236C20095048E /* Info.plist */,
+			);
+			path = TestBundle;
+			sourceTree = "<group>";
+		};
+		BFCE072720D23C850095048E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE073A20D23DFB0095048E /* CheatCodes@2x.png */,
+				BFCE073B20D23DFB0095048E /* FastForward@2x.png */,
+				BFCE073920D23DFA0095048E /* LoadSaveState@2x.png */,
+				BFCE073820D23DFA0095048E /* Pause@2x.png */,
+				BFCE073C20D23DFC0095048E /* SaveSaveState@2x.png */,
+				BFCE073D20D23DFC0095048E /* SustainButtons@2x.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		BFD771FC20D061FB003D3AF9 /* DeltaCore */ = {
@@ -660,6 +970,7 @@
 				5E086DC62051DB17004D8D25 /* Resources */,
 			);
 			buildRules = (
+				BFCE070C20D235340095048E /* PBXBuildRule */,
 				5E086DD42051E415004D8D25 /* PBXBuildRule */,
 			);
 			dependencies = (
@@ -752,12 +1063,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
-				5E086DCA2051DDAE004D8D25 /* LiveView.storyboard in Resources */,
-				BFD7729320D06B3D003D3AF9 /* MFiGameController.deltamapping in Resources */,
-				BFD7728D20D06914003D3AF9 /* Standard.deltaskin in Resources */,
-				BFD7728E20D06914003D3AF9 /* Standard.deltamapping in Resources */,
-				BFAC941120D06FE600904D49 /* nestopia.js in Resources */,
+				BFCE073E20D23DFC0095048E /* Pause@2x.png in Resources */,
+				BFCE071D20D23C3F0095048E /* RSTPlaceholderView.xib in Resources */,
+				BFCE071E20D23C3F0095048E /* Delta.xcdatamodeld in Resources */,
+				BFCE071F20D23C3F0095048E /* PausePresentationControllerContentView.xib in Resources */,
+				BFCE072020D23C3F0095048E /* PauseMenu.storyboard in Resources */,
+				BFCE073F20D23DFC0095048E /* LoadSaveState@2x.png in Resources */,
+				BFCE072120D23C3F0095048E /* MFiGameController.deltamapping in Resources */,
+				BFCE072220D23C3F0095048E /* nestopia.js in Resources */,
+				BFCE074320D23DFC0095048E /* SustainButtons@2x.png in Resources */,
+				BFCE072320D23C3F0095048E /* Standard.deltaskin in Resources */,
+				BFCE072420D23C3F0095048E /* Standard.deltamapping in Resources */,
+				BFCE072520D23C3F0095048E /* ManifestPlist.strings in Resources */,
+				BFCE072620D23C3F0095048E /* LiveView.storyboard in Resources */,
+				BFCE074120D23DFC0095048E /* FastForward@2x.png in Resources */,
+				BFCE074220D23DFC0095048E /* SaveSaveState@2x.png in Resources */,
+				BFCE074020D23DFC0095048E /* CheatCodes@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +1088,7 @@
 			files = (
 				BFAC941B20D0840100904D49 /* Main.storyboard in Resources */,
 				5EA2E3CA2056F35B00416A35 /* LiveViewTestAppLaunchScreen.storyboard in Resources */,
+				BFCE074420D24F6A0095048E /* PauseMenu.storyboard in Resources */,
 				BFAC941720D0812400904D49 /* LiveView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,6 +1120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFAC941920D083BA00904D49 /* ViewController.swift in Sources */,
+				BFCE06F220D1E2520095048E /* Delta.xcdatamodeld in Sources */,
 				5EA2E3C02056F35A00416A35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -807,44 +1130,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFD7726220D061FB003D3AF9 /* Input.swift in Sources */,
+				BFCE06AF20D1C0740095048E /* SaveStatesViewController.swift in Sources */,
+				BFCE06F920D2224F0095048E /* EditCheatViewController.swift in Sources */,
+				BFCE06E720D1CEB80095048E /* EmulatorCore+Cheats.swift in Sources */,
 				BFD7724B20D061FB003D3AF9 /* CheatFormat.swift in Sources */,
+				BFCE06FB20D2224F0095048E /* CheatTextView.swift in Sources */,
 				BFD7725120D061FB003D3AF9 /* SaveState.swift in Sources */,
 				BFD7723F20D061FB003D3AF9 /* ControllerView.swift in Sources */,
 				BFD7723C20D061FB003D3AF9 /* SamplerFilter.swift in Sources */,
 				BFD7724020D061FB003D3AF9 /* ControllerDebugView.swift in Sources */,
+				BF7AB2C820D10FC200A678D6 /* RSTOperationQueue.swift in Sources */,
+				BFCE06EE20D1E23F0095048E /* NESSaveState.swift in Sources */,
+				BF7AB2C420D104C200A678D6 /* RSTCollectionViewChangeOperation.swift in Sources */,
 				BFD7726320D061FB003D3AF9 /* Delta.swift in Sources */,
 				5E3196F32061DEA40077BBD7 /* LiveViewSupport.swift in Sources */,
+				BF7AB2BB20D0C40000A678D6 /* DeltaCoreProtocol+Delta.swift in Sources */,
 				BFD7725D20D061FB003D3AF9 /* GameControllerInputMappingProtocol.swift in Sources */,
 				BFD7725B20D061FB003D3AF9 /* GameProtocol.swift in Sources */,
+				BF7AB2AA20D0B5AC00A678D6 /* PauseTransitionCoordinator.swift in Sources */,
 				BFD7724420D061FB003D3AF9 /* MFiGameController.swift in Sources */,
 				BFD7725A20D061FB003D3AF9 /* CheatProtocol.swift in Sources */,
+				BFCE06D920D1C8BC0095048E /* LoadImageURLOperation.swift in Sources */,
 				BFD7724E20D061FB003D3AF9 /* GameControllerInputMapping.swift in Sources */,
+				BF7AB2C620D106CB00A678D6 /* RSTCellContentDataSource.swift in Sources */,
 				5EF2F9AE2054BBF300191409 /* LiveGameViewController.swift in Sources */,
 				BFD7727320D0623E003D3AF9 /* Data+Compression.swift in Sources */,
 				BFD7724D20D061FB003D3AF9 /* ControllerSkin.swift in Sources */,
+				BFCE06E020D1CB410095048E /* FileManager+Conveniences.swift in Sources */,
 				BFD7724620D061FB003D3AF9 /* UIScreen+ControllerSkin.swift in Sources */,
 				BFD7725020D061FB003D3AF9 /* GameControllerStateManager.swift in Sources */,
+				BFCE06A420D1BA3D0095048E /* RSTFetchedResultsDataSource.swift in Sources */,
+				BF7AB29D20D0B55000A678D6 /* MenuItem.swift in Sources */,
 				BFD7724220D061FB003D3AF9 /* ExtensibleEnums.swift in Sources */,
 				BFD7725520D061FB003D3AF9 /* VideoManager.swift in Sources */,
 				BFD7723B20D061FB003D3AF9 /* FilterChain.swift in Sources */,
 				BFD7725F20D061FB003D3AF9 /* VideoRendering.swift in Sources */,
 				BFD7728F20D06914003D3AF9 /* NESEmulatorBridge.swift in Sources */,
+				BFCE06D020D1C5240095048E /* _Cheat.swift in Sources */,
+				BFCE06AE20D1C0740095048E /* SaveStatesCollectionHeaderView.swift in Sources */,
 				BFD7725920D061FB003D3AF9 /* EmulatorCore.swift in Sources */,
 				BFD7727120D0623E003D3AF9 /* Archive+Reading.swift in Sources */,
 				BFD7723E20D061FB003D3AF9 /* GameViewController.swift in Sources */,
+				BFCE06D720D1C6250095048E /* NSManagedObjectContext+Conveniences.swift in Sources */,
+				BFCE06FC20D2224F0095048E /* CheatsViewController.swift in Sources */,
 				BFD7727220D0623E003D3AF9 /* Entry.swift in Sources */,
 				BFD7725620D061FB003D3AF9 /* VideoFormat.swift in Sources */,
+				BFCE06ED20D1E23F0095048E /* NESGame.swift in Sources */,
 				BFD7725220D061FB003D3AF9 /* ControllerSkinTraits.swift in Sources */,
 				BFD7727520D0623E003D3AF9 /* Data+Serialization.swift in Sources */,
+				BF7AB2B020D0BA0000A678D6 /* UIColor+Delta.swift in Sources */,
 				BFD7726520D061FB003D3AF9 /* EmulatorBridging.swift in Sources */,
 				BFD7727420D0623E003D3AF9 /* Archive+Writing.swift in Sources */,
+				BF7AB2C220D0FF4E00A678D6 /* RSTCellContentView.swift in Sources */,
 				BFD7729020D06914003D3AF9 /* NES.swift in Sources */,
+				BF7AB2A120D0B56900A678D6 /* GridCollectionViewCell.swift in Sources */,
+				BF7AB29C20D0B55000A678D6 /* PauseViewController.swift in Sources */,
+				BF7AB29B20D0B55000A678D6 /* GridMenuViewController.swift in Sources */,
 				BFD7726020D061FB003D3AF9 /* AudioRendering.swift in Sources */,
 				BFD7724C20D061FB003D3AF9 /* Game.swift in Sources */,
 				BFD7724A20D061FB003D3AF9 /* UIImage+PDF.swift in Sources */,
 				BFD7725320D061FB003D3AF9 /* StandardGameControllerInput.swift in Sources */,
 				BFD7724320D061FB003D3AF9 /* ExternalGameControllerManager.swift in Sources */,
+				BFCE06B220D1C50B0095048E /* DatabaseManager.swift in Sources */,
+				BF7AB2A520D0B59A00A678D6 /* PausePresentationController.swift in Sources */,
+				BFCE06EC20D1E23F0095048E /* NESCheat.swift in Sources */,
+				BF7AB2BE20D0C43900A678D6 /* System.swift in Sources */,
 				BFD7724920D061FB003D3AF9 /* CharacterSet+Hexadecimals.swift in Sources */,
+				BFCE06D320D1C6140095048E /* Action.swift in Sources */,
+				BF7AB2A020D0B56900A678D6 /* GridCollectionViewLayout.swift in Sources */,
 				BFD7727620D0623E003D3AF9 /* FileManager+ZIP.swift in Sources */,
 				BFD7726120D061FB003D3AF9 /* GameController.swift in Sources */,
 				BFD7725420D061FB003D3AF9 /* AnyInput.swift in Sources */,
@@ -852,12 +1205,25 @@
 				BFD7725C20D061FB003D3AF9 /* SaveStateProtocol.swift in Sources */,
 				BFD7724120D061FB003D3AF9 /* DeltaCore.m in Sources */,
 				BFD7725820D061FB003D3AF9 /* AudioManager.swift in Sources */,
+				BFCE06D620D1C6250095048E /* NSManagedObject+Conveniences.swift in Sources */,
+				BFCE074F20D25B580095048E /* SHA1.swift in Sources */,
+				BFCE06E220D1CDBF0095048E /* DLTAGameViewController.swift in Sources */,
 				BFD7724820D061FB003D3AF9 /* CGGeometry+Dictionary.swift in Sources */,
+				BFCE06FA20D2224F0095048E /* CheatValidator.swift in Sources */,
+				BF7AB2B220D0BD7000A678D6 /* UILabel+FontSize.swift in Sources */,
 				BFD7725720D061FB003D3AF9 /* RingBuffer.swift in Sources */,
+				BFCE06DD20D1CA850095048E /* UIViewController+TransitionState.swift in Sources */,
 				BFD7723D20D061FB003D3AF9 /* GameView.swift in Sources */,
+				BFCE06CF20D1C5240095048E /* _SaveState.swift in Sources */,
+				BFCE06CE20D1C5240095048E /* _Game.swift in Sources */,
 				BFD7724720D061FB003D3AF9 /* Thread+RealTime.swift in Sources */,
+				BFCE06E520D1CE840095048E /* ActionInput.swift in Sources */,
 				BFD7727020D0623E003D3AF9 /* Archive.swift in Sources */,
 				BFD7725E20D061FB003D3AF9 /* ControllerSkinProtocol.swift in Sources */,
+				BFCE06AA20D1BF570095048E /* RSTPlaceholderView.swift in Sources */,
+				BFCE06FD20D2224F0095048E /* CheatTableViewCell.swift in Sources */,
+				BF7AB2A920D0B5AC00A678D6 /* PauseStoryboardSegue.swift in Sources */,
+				BF7AB2AD20D0B9C900A678D6 /* Roxas.swift in Sources */,
 				BFD7724F20D061FB003D3AF9 /* Cheat.swift in Sources */,
 				BFD7726420D061FB003D3AF9 /* DeltaCoreProtocol.swift in Sources */,
 			);
@@ -919,6 +1285,7 @@
 				CURRENT_PROJECT_VERSION = 1.0;
 				GCC_DYNAMIC_NO_PIC = NO;
 				INSTALL_PATH = /;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
 				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
 				SKIP_INSTALL = NO;
@@ -932,6 +1299,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0;
 				INSTALL_PATH = /;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PLAYGROUND_BOOK_CONTENT_IDENTIFIER)";
 				PRODUCT_NAME = "$(PLAYGROUND_BOOK_FILE_NAME)";
 				SKIP_INSTALL = NO;
@@ -1106,6 +1474,7 @@
 		5EF2F9B02054BBF300191409 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1119,6 +1488,7 @@
 		5EF2F9B12054BBF300191409 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1169,6 +1539,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFCE06EF20D1E2520095048E /* Delta.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFCE06F020D1E2520095048E /* Delta.xcdatamodel */,
+				BFCE06F120D1E2520095048E /* Delta 2.xcdatamodel */,
+			);
+			currentVersion = BFCE06F020D1E2520095048E /* Delta.xcdatamodel */;
+			path = Delta.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5E2A7ADD204F611300F4E17A /* Project object */;
 }

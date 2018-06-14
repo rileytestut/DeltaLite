@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E202" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="1.0">
+    <entity name="NESCheat" representedClassName="NESCheat" syncable="YES">
+        <attribute name="code" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="isEnabled" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="modifiedDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NESGame" inverseName="cheats" inverseEntity="NESGame" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="identifier"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="NESGame" representedClassName="NESGame" syncable="YES">
+        <attribute name="artworkURL" optional="YES" attributeType="Transformable" syncable="YES">
+            <userInfo>
+                <entry key="attributeValueClassName" value="URL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="filename" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="attributeValueClassName" value="NSURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="playedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="cheats" toMany="YES" deletionRule="Cascade" destinationEntity="NESCheat" inverseName="game" inverseEntity="NESCheat" syncable="YES"/>
+        <relationship name="previewSaveState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NESSaveState" inverseName="previewGame" inverseEntity="NESSaveState" syncable="YES"/>
+        <relationship name="saveStates" toMany="YES" deletionRule="Cascade" destinationEntity="NESSaveState" inverseName="game" inverseEntity="NESSaveState" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="identifier"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="NESSaveState" representedClassName="NESSaveState" versionHashModifier="quick" syncable="YES">
+        <attribute name="creationDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="filename" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="attributeValueClassName" value="NSURL"/>
+            </userInfo>
+        </attribute>
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 16" defaultValueString="2" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="attributeValueScalarType" value="SaveStateType"/>
+            </userInfo>
+        </attribute>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NESGame" inverseName="saveStates" inverseEntity="NESGame" syncable="YES"/>
+        <relationship name="previewGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NESGame" inverseName="previewSaveState" inverseEntity="NESGame" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="identifier"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="NESCheat" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="NESGame" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="NESSaveState" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
