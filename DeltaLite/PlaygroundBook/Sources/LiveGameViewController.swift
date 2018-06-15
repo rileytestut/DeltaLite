@@ -85,6 +85,8 @@ private extension LiveGameViewController
         
         DatabaseManager.shared.loadPersistentStores { (description, error) in
         }
+        
+        ExternalGameControllerManager.shared.startMonitoring()
     }
 }
 
