@@ -9,6 +9,23 @@
 import UIKit
 import PlaygroundSupport
 
+extension UILayoutGuide
+{
+    static var liveViewSafeArea: UILayoutGuide?
+    
+    var containingViewInsets: UIEdgeInsets {
+        guard let containingView = self.owningView else { return .zero }
+        
+        var insets = UIEdgeInsets()
+        insets.top = self.layoutFrame.minY - containingView.bounds.minY
+        insets.bottom = containingView.bounds.maxY - self.layoutFrame.maxY
+        insets.left = self.layoutFrame.minX - containingView.bounds.minX
+        insets.right = containingView.bounds.maxX - self.layoutFrame.maxX
+        
+        return insets
+    }
+}
+
 @objc(Book_Sources_LiveGameViewController)
 public class LiveGameViewController: DLTAGameViewController, PlaygroundLiveViewMessageHandler, PlaygroundLiveViewSafeAreaContainer
 {
@@ -87,6 +104,8 @@ private extension LiveGameViewController
         }
         
         ExternalGameControllerManager.shared.startMonitoring()
+        
+        UILayoutGuide.liveViewSafeArea = self.liveViewSafeAreaGuide
     }
 }
 

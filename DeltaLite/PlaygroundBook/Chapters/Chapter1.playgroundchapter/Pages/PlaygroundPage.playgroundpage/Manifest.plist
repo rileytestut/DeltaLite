@@ -5,7 +5,7 @@
 	<key>Name</key>
 	<string>ChapterOnePageOneName</string>
 	<key>LiveViewEdgeToEdge</key>
-	<false/>
+	<true/>
 	<key>PlaygroundLoggingMode</key>
 	<string>Off</string>
 	<key>LiveViewMode</key>
