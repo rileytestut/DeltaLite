@@ -140,6 +140,8 @@ public class DLTAGameViewController: GameViewController
 //        NotificationCenter.default.addObserver(self, selector: #selector(DLTAGameViewController.didEnterBackground(with:)), name: .UIApplicationDidEnterBackground, object: UIApplication.shared)
 //        NotificationCenter.default.addObserver(self, selector: #selector(DLTAGameViewController.settingsDidChange(with:)), name: .settingsDidChange, object: nil)
 //        NotificationCenter.default.addObserver(self, selector: #selector(DLTAGameViewController.deepLinkControllerLaunchGame(with:)), name: .deepLinkControllerLaunchGame, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(DLTAGameViewController.updateControllers), name: .settingsDidChange, object: nil)
     }
     
     deinit
@@ -463,6 +465,17 @@ private extension DLTAGameViewController
             {
                 if gameController.playerIndex != nil
                 {
+                    if gameController.inputType == .keyboard
+                    {
+                        gameController.addReceiver(self, inputMapping: Settings.shared.keyboardInputMapping)
+                        gameController.addReceiver(emulatorCore, inputMapping: Settings.shared.keyboardInputMapping)
+                    }
+                    else
+                    {
+                        gameController.addReceiver(self)
+                        gameController.addReceiver(emulatorCore)
+                    }
+                    
 //                    if let inputMapping = GameControllerInputMapping.inputMapping(for: gameController, gameType: game.type, in: DatabaseManager.shared.viewContext)
 //                    {
 //                        gameController.addReceiver(self, inputMapping: inputMapping)
@@ -470,8 +483,8 @@ private extension DLTAGameViewController
 //                    }
 //                    else
 //                    {
-                        gameController.addReceiver(self)
-                        gameController.addReceiver(emulatorCore)
+//                        gameController.addReceiver(self)
+//                        gameController.addReceiver(emulatorCore)
 //                    }
                 }
                 else

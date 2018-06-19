@@ -16,7 +16,7 @@ class AppDelegate: LiveViewHost.AppDelegate
     static var liveView: LiveGameViewController?
     
     override var liveViewConfiguration: LiveViewConfiguration {
-        return .fullScreen
+        return .sideBySide
     }
     
     override func setUpLiveView() -> PlaygroundLiveViewable

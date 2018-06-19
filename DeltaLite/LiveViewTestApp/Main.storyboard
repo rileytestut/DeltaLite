@@ -17,18 +17,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q92-3s-b1d">
-                                <rect key="frame" x="139" y="318" width="97" height="30"/>
-                                <state key="normal" title="Choose Game"/>
-                                <connections>
-                                    <action selector="chooseGame" destination="dSo-Mn-3B0" eventType="primaryActionTriggered" id="ti8-zl-mIp"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="o6m-Vs-EYB">
+                                <rect key="frame" x="139" y="193" width="97" height="280.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q92-3s-b1d">
+                                        <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
+                                        <state key="normal" title="Choose Game"/>
+                                        <connections>
+                                            <action selector="chooseGame" destination="dSo-Mn-3B0" eventType="primaryActionTriggered" id="ti8-zl-mIp"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HVf-sP-XMX">
+                                        <rect key="frame" x="14.5" y="80" width="68" height="200.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgk-Mc-nMP">
+                                                <rect key="frame" x="11" y="0.0" width="46.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDk-Jl-6MI">
+                                                <rect key="frame" x="15.5" y="20.5" width="37" height="30"/>
+                                                <state key="normal" title="None"/>
+                                                <connections>
+                                                    <action selector="chooseNoFilter" destination="dSo-Mn-3B0" eventType="touchUpInside" id="ZKb-AJ-LKj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUP-xq-sGD">
+                                                <rect key="frame" x="19" y="50.5" width="30" height="30"/>
+                                                <state key="normal" title="Blur"/>
+                                                <connections>
+                                                    <action selector="chooseBlurFilter" destination="dSo-Mn-3B0" eventType="touchUpInside" id="A2l-e5-hom"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svh-NF-zXO">
+                                                <rect key="frame" x="14.5" y="80.5" width="39" height="30"/>
+                                                <state key="normal" title="Sepia"/>
+                                                <connections>
+                                                    <action selector="chooseSepiaFilter" destination="dSo-Mn-3B0" eventType="touchUpInside" id="gVV-of-XIn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMZ-Gh-9Kv">
+                                                <rect key="frame" x="14" y="110.5" width="40" height="30"/>
+                                                <state key="normal" title="Invert"/>
+                                                <connections>
+                                                    <action selector="chooseInvertFilter" destination="dSo-Mn-3B0" eventType="touchUpInside" id="KPb-DW-WmH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89d-9s-EMI">
+                                                <rect key="frame" x="0.0" y="140.5" width="68" height="30"/>
+                                                <state key="normal" title="Grayscale"/>
+                                                <connections>
+                                                    <action selector="chooseGrayscaleFilter" destination="dSo-Mn-3B0" eventType="touchUpInside" id="ZUi-8i-344"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1m-SR-5Uu">
+                                                <rect key="frame" x="7" y="170.5" width="54" height="30"/>
+                                                <state key="normal" title="Custom"/>
+                                                <connections>
+                                                    <action selector="chooseCustomFilter" destination="dSo-Mn-3B0" eventType="touchUpInside" id="kWa-oL-bs0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Q92-3s-b1d" firstAttribute="centerY" secondItem="YQh-eP-3Xh" secondAttribute="centerY" id="Dte-N6-rNa"/>
-                            <constraint firstItem="Q92-3s-b1d" firstAttribute="centerX" secondItem="YQh-eP-3Xh" secondAttribute="centerX" id="tJ1-GY-tyB"/>
+                            <constraint firstItem="o6m-Vs-EYB" firstAttribute="centerX" secondItem="YQh-eP-3Xh" secondAttribute="centerX" id="Icf-0y-oqK"/>
+                            <constraint firstItem="o6m-Vs-EYB" firstAttribute="centerY" secondItem="YQh-eP-3Xh" secondAttribute="centerY" id="Oev-sA-Abi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nWb-Oy-S41"/>
                     </view>

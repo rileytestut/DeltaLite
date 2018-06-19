@@ -18,6 +18,7 @@
 		5EF2F9AE2054BBF300191409 /* LiveGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2F9AD2054BBF300191409 /* LiveGameViewController.swift */; };
 		5EF2F9B72054E6FB00191409 /* Chapters in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9B62054E6F900191409 /* Chapters */; };
 		5EF2F9B82054E6FE00191409 /* Sources in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9A52054BBB200191409 /* Sources */; };
+		BF46349E20D9638F00CD12FD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF46349D20D9638F00CD12FD /* Settings.swift */; };
 		BF7AB29B20D0B55000A678D6 /* GridMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29720D0B54F00A678D6 /* GridMenuViewController.swift */; };
 		BF7AB29C20D0B55000A678D6 /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29920D0B55000A678D6 /* PauseViewController.swift */; };
 		BF7AB29D20D0B55000A678D6 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29A20D0B55000A678D6 /* MenuItem.swift */; };
@@ -256,6 +257,7 @@
 		5EF2F9AB2054BBF300191409 /* libBook_Sources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBook_Sources.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF2F9AD2054BBF300191409 /* LiveGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveGameViewController.swift; sourceTree = "<group>"; };
 		5EF2F9B62054E6F900191409 /* Chapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chapters; sourceTree = "<group>"; };
+		BF46349D20D9638F00CD12FD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BF7AB29720D0B54F00A678D6 /* GridMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridMenuViewController.swift; sourceTree = "<group>"; };
 		BF7AB29820D0B55000A678D6 /* PauseMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PauseMenu.storyboard; sourceTree = "<group>"; };
 		BF7AB29920D0B55000A678D6 /* PauseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
@@ -527,6 +529,7 @@
 				5EF2F9AD2054BBF300191409 /* LiveGameViewController.swift */,
 				5E3196F22061DEA40077BBD7 /* LiveViewSupport.swift */,
 				BFCE074E20D25B570095048E /* SHA1.swift */,
+				BF46349D20D9638F00CD12FD /* Settings.swift */,
 				BF7AB2AB20D0B6C500A678D6 /* Roxas */,
 				BF7AB29620D0B52E00A678D6 /* Delta */,
 				BFD771FC20D061FB003D3AF9 /* DeltaCore */,
@@ -1249,6 +1252,7 @@
 				BFA5FCE720D36B6900A3C5AB /* UIApplication+AppExtension.swift in Sources */,
 				BFCE06DD20D1CA850095048E /* UIViewController+TransitionState.swift in Sources */,
 				BFD7723D20D061FB003D3AF9 /* GameView.swift in Sources */,
+				BF46349E20D9638F00CD12FD /* Settings.swift in Sources */,
 				BFCE06CF20D1C5240095048E /* _SaveState.swift in Sources */,
 				BFCE06CE20D1C5240095048E /* _Game.swift in Sources */,
 				BFD7724720D061FB003D3AF9 /* Thread+RealTime.swift in Sources */,

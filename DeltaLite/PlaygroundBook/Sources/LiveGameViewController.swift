@@ -26,6 +26,11 @@ extension UILayoutGuide
     }
 }
 
+public extension Notification.Name
+{
+    static let settingsDidChange = Notification.Name("SettingsDidChange")
+}
+
 @objc(Book_Sources_LiveGameViewController)
 public class LiveGameViewController: DLTAGameViewController, PlaygroundLiveViewMessageHandler, PlaygroundLiveViewSafeAreaContainer
 {
@@ -35,6 +40,8 @@ public class LiveGameViewController: DLTAGameViewController, PlaygroundLiveViewM
         
         self.delegate = self
         self.definesPresentationContext = true
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(LiveGameViewController.updateSettings), name: .settingsDidChange, object: nil)
     }
     
     public required init() {
@@ -60,27 +67,49 @@ public class LiveGameViewController: DLTAGameViewController, PlaygroundLiveViewM
     
     public func receive(_ message: PlaygroundValue)
     {
-        guard case .data(let bookmark) = message else { return }
+        guard case .dictionary(let dictionary) = message else { return }
         
         do
         {
-            var isStale = false
-            guard let fileURL = try URL(resolvingBookmarkData: bookmark, bookmarkDataIsStale: &isStale) else { return }
+            if let settingsValue = dictionary["settings"], case .data(let data) = settingsValue
+            {
+                let isRunning = self.emulatorCore?.state == .running
+                if isRunning
+                {
+                    self.pauseEmulation()
+                }
+                
+                let settings = try PropertyListDecoder().decode(Settings.self, from: data)
+                Settings.shared = settings
+                
+                NotificationCenter.default.post(name: .settingsDidChange, object: settings)
+                
+                if isRunning
+                {
+                    self.resumeEmulation()
+                }
+            }
             
-            DatabaseManager.shared.importGames(at: [fileURL]) { (importedGames, errors) in
-                if errors.count > 0
-                {
-                    print(errors)
-                }
+            if let gameValue = dictionary["game"], case .data(let bookmark) = gameValue
+            {
+                var isStale = false
+                guard let fileURL = try URL(resolvingBookmarkData: bookmark, bookmarkDataIsStale: &isStale) else { return }
                 
-                if importedGames.count > 0
-                {
-                    print("Imported Games:", importedGames)
-                }
-                
-                if let game = importedGames.first
-                {
-                    self.play(game)
+                DatabaseManager.shared.importGames(at: [fileURL]) { (importedGames, errors) in
+                    if errors.count > 0
+                    {
+                        print(errors)
+                    }
+                    
+                    if importedGames.count > 0
+                    {
+                        print("Imported Games:", importedGames)
+                    }
+                    
+                    if let game = importedGames.first
+                    {
+                        self.play(game)
+                    }
                 }
             }
         }
@@ -106,18 +135,30 @@ private extension LiveGameViewController
         ExternalGameControllerManager.shared.startMonitoring()
         
         UILayoutGuide.liveViewSafeArea = self.liveViewSafeAreaGuide
+        
+        self.updateSettings()
     }
-}
-
-private extension LiveGameViewController
-{
+    
     func play(_ game: NESGame)
     {
+        guard game != (self.game as? NESGame) else { return }
+        
+        self.emulatorCore?.pause()
+        self.emulatorCore?.stop()
+        
         self.game = game
         
         self.view.setNeedsLayout()
         self.view.layoutIfNeeded()
         
-        self.emulatorCore?.start()
+        self.startEmulation()
+    }
+}
+
+private extension LiveGameViewController
+{
+    @objc func updateSettings()
+    {
+        self.gameView.filter = Settings.shared.gameFilter?.ciFilter
     }
 }
