@@ -167,23 +167,3 @@ extension Settings
         }
     }
 }
-
-func testFunc()
-{
-    let settings = Settings.shared
-    
-    settings.inputs.a = "A"
-    settings.inputs.b = "B"
-    
-    settings.gameFilter = .blur(radius: 10)
-    
-    do
-    {
-        let data = try PropertyListEncoder().encode(settings)
-        
-    }
-    catch
-    {
-        print(error)
-    }
-}
