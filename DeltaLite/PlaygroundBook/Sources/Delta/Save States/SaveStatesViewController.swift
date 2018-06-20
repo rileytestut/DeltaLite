@@ -100,11 +100,11 @@ extension SaveStatesViewController
         
         let collectionViewLayout = self.collectionViewLayout as! GridCollectionViewLayout
         let averageHorizontalInset = (collectionViewLayout.sectionInset.left + collectionViewLayout.sectionInset.right) / 2
-        let portraitScreenWidth = NESEmulatorBridge.applicationWindow!.bounds.width
+        let landscapeScreenHalfWidth = (UIScreen.main.bounds.height / 2.0)
         
         // Use dimensions that allow two cells to fill the screen horizontally with padding in portrait mode
         // We'll keep the same size for landscape orientation, which will allow more to fit
-        collectionViewLayout.itemWidth = floor((portraitScreenWidth - (averageHorizontalInset * 3)) / 2)
+        collectionViewLayout.itemWidth = floor((landscapeScreenHalfWidth - (averageHorizontalInset * 3)) / 2)
         
         switch self.mode
         {
