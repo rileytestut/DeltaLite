@@ -34,8 +34,13 @@ func play(_ gameURL: URL)
  # Delta Lite
 */
 
-//: ## Choose Game
-//: Tap the image icon to choose a game from the Files app.
+/*:
+ ## Instructions
+ - Tap the image icon below to choose a game from the Files app.
+ - Press the `Run My Code` button to start the game, or to update any settings you have changed since starting a game.
+ - Press the Menu button on the controller to pause the game and access additional features.
+ - To enter full screen mode, drag the vertical dividing line in the center all the way to the left.
+*/
 let game = #fileLiteral(resourceName: "")
 
 //: ## External Keyboard Controls
@@ -59,7 +64,7 @@ settings.gameFilter = nil
 //settings.gameFilter = .grayscale(intensity: 1.0)
 //settings.gameFilter = .custom(ciFilter: CIFilter(name: "CICrystallize", withInputParameters: ["inputRadius": 5])!)
 
-play(game)
-
 //: ## View Source
 //: Check out the complete source code for this Swift Playground Book [on GitHub](https://github.com/rileytestut/DeltaLite).
+
+play(game)
