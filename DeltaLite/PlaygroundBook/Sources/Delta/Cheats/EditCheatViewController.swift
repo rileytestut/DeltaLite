@@ -209,7 +209,7 @@ internal extension EditCheatViewController
     func presentWithPresentingViewController(_ presentingViewController: UIViewController)
     {
         let navigationController = UINavigationController(rootViewController: self)
-        navigationController.modalPresentationStyle = .overFullScreen // Keeps PausePresentationController active to ensure layout is not messed up
+        navigationController.modalPresentationStyle = .formSheet // Keeps PausePresentationController active to ensure layout is not messed up
         navigationController.modalPresentationCapturesStatusBarAppearance = true
         
         presentingViewController.present(navigationController, animated: true, completion: nil)
