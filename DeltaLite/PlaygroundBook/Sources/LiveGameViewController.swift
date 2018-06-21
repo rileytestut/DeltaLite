@@ -48,6 +48,14 @@ public class LiveGameViewController: DLTAGameViewController, PlaygroundLiveViewM
         fatalError("init() has not been implemented")
     }
     
+    public override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        let orientation: ControllerSkin.Orientation = (UIScreen.main.bounds.width > UIScreen.main.bounds.height) ? .landscape : .portrait
+        self.controllerView.overrideControllerSkinTraits = ControllerSkin.Traits(device: .ipad, displayType: .splitView, orientation: orientation)
+    }
+    
     public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator)
     {
         coordinator.animate(alongsideTransition: nil) { (context) in

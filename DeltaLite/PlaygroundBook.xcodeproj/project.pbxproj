@@ -18,6 +18,8 @@
 		5EF2F9AE2054BBF300191409 /* LiveGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF2F9AD2054BBF300191409 /* LiveGameViewController.swift */; };
 		5EF2F9B72054E6FB00191409 /* Chapters in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9B62054E6F900191409 /* Chapters */; };
 		5EF2F9B82054E6FE00191409 /* Sources in Copy Book Contents */ = {isa = PBXBuildFile; fileRef = 5EF2F9A52054BBB200191409 /* Sources */; };
+		BF1F24F120DAC4B60095A468 /* Standard.deltaskin in Resources */ = {isa = PBXBuildFile; fileRef = BF1F24F020DAC4B60095A468 /* Standard.deltaskin */; };
+		BF1F24F320DADA360095A468 /* ControllerInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1F24F220DADA360095A468 /* ControllerInputView.swift */; };
 		BF46349E20D9638F00CD12FD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF46349D20D9638F00CD12FD /* Settings.swift */; };
 		BF7AB29B20D0B55000A678D6 /* GridMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29720D0B54F00A678D6 /* GridMenuViewController.swift */; };
 		BF7AB29C20D0B55000A678D6 /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7AB29920D0B55000A678D6 /* PauseViewController.swift */; };
@@ -76,7 +78,6 @@
 		BFCE072020D23C3F0095048E /* PauseMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7AB29820D0B55000A678D6 /* PauseMenu.storyboard */; };
 		BFCE072120D23C3F0095048E /* MFiGameController.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BFD7721420D061FB003D3AF9 /* MFiGameController.deltamapping */; };
 		BFCE072220D23C3F0095048E /* nestopia.js in Resources */ = {isa = PBXBuildFile; fileRef = BFAC941020D06FE600904D49 /* nestopia.js */; };
-		BFCE072320D23C3F0095048E /* Standard.deltaskin in Resources */ = {isa = PBXBuildFile; fileRef = BFD7728120D06914003D3AF9 /* Standard.deltaskin */; };
 		BFCE072420D23C3F0095048E /* Standard.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = BFD7728220D06914003D3AF9 /* Standard.deltamapping */; };
 		BFCE072520D23C3F0095048E /* ManifestPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EF2F97E2054B6E400191409 /* ManifestPlist.strings */; };
 		BFCE072620D23C3F0095048E /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */; };
@@ -258,6 +259,8 @@
 		5EF2F9AB2054BBF300191409 /* libBook_Sources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBook_Sources.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF2F9AD2054BBF300191409 /* LiveGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveGameViewController.swift; sourceTree = "<group>"; };
 		5EF2F9B62054E6F900191409 /* Chapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Chapters; sourceTree = "<group>"; };
+		BF1F24F020DAC4B60095A468 /* Standard.deltaskin */ = {isa = PBXFileReference; lastKnownFileType = file; name = Standard.deltaskin; path = "Controller Skin/Standard.deltaskin"; sourceTree = "<group>"; };
+		BF1F24F220DADA360095A468 /* ControllerInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerInputView.swift; sourceTree = "<group>"; };
 		BF46349D20D9638F00CD12FD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		BF7AB29720D0B54F00A678D6 /* GridMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridMenuViewController.swift; sourceTree = "<group>"; };
 		BF7AB29820D0B55000A678D6 /* PauseMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PauseMenu.storyboard; sourceTree = "<group>"; };
@@ -378,7 +381,6 @@
 		BFD7726E20D0623E003D3AF9 /* Data+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Serialization.swift"; sourceTree = "<group>"; };
 		BFD7726F20D0623E003D3AF9 /* FileManager+ZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ZIP.swift"; sourceTree = "<group>"; };
 		BFD7727920D068DC003D3AF9 /* NESDeltaCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NESDeltaCore; path = ../../Dependencies/NESDeltaCore/NESDeltaCore; sourceTree = "<group>"; };
-		BFD7728120D06914003D3AF9 /* Standard.deltaskin */ = {isa = PBXFileReference; lastKnownFileType = file; path = Standard.deltaskin; sourceTree = "<group>"; };
 		BFD7728220D06914003D3AF9 /* Standard.deltamapping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Standard.deltamapping; sourceTree = "<group>"; };
 		BFD7728420D06914003D3AF9 /* NESEmulatorBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NESEmulatorBridge.swift; sourceTree = "<group>"; };
 		BFD7728520D06914003D3AF9 /* NES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NES.swift; sourceTree = "<group>"; };
@@ -791,6 +793,7 @@
 				BFD7720120D061FB003D3AF9 /* GameView.swift */,
 				BFD7720220D061FB003D3AF9 /* GameViewController.swift */,
 				BFD7720320D061FB003D3AF9 /* ControllerView.swift */,
+				BF1F24F220DADA360095A468 /* ControllerInputView.swift */,
 				BFD7720420D061FB003D3AF9 /* ControllerDebugView.swift */,
 			);
 			path = UI;
@@ -981,7 +984,7 @@
 			isa = PBXGroup;
 			children = (
 				BFD7728620D06914003D3AF9 /* Info.plist */,
-				BFD7728120D06914003D3AF9 /* Standard.deltaskin */,
+				BF1F24F020DAC4B60095A468 /* Standard.deltaskin */,
 				BFD7728220D06914003D3AF9 /* Standard.deltamapping */,
 			);
 			name = "Supporting Files";
@@ -1106,11 +1109,11 @@
 				BFCE071E20D23C3F0095048E /* Delta.xcdatamodeld in Resources */,
 				BFCE071F20D23C3F0095048E /* PausePresentationControllerContentView.xib in Resources */,
 				BFCE072020D23C3F0095048E /* PauseMenu.storyboard in Resources */,
+				BF1F24F120DAC4B60095A468 /* Standard.deltaskin in Resources */,
 				BFCE073F20D23DFC0095048E /* LoadSaveState@2x.png in Resources */,
 				BFCE072120D23C3F0095048E /* MFiGameController.deltamapping in Resources */,
 				BFCE072220D23C3F0095048E /* nestopia.js in Resources */,
 				BFCE074320D23DFC0095048E /* SustainButtons@2x.png in Resources */,
-				BFCE072320D23C3F0095048E /* Standard.deltaskin in Resources */,
 				BFCE072420D23C3F0095048E /* Standard.deltamapping in Resources */,
 				BFA5FCE020D3112E00A3C5AB /* KeyboardGameController.deltamapping in Resources */,
 				BFCE072520D23C3F0095048E /* ManifestPlist.strings in Resources */,
@@ -1176,6 +1179,7 @@
 				BFCE06FB20D2224F0095048E /* CheatTextView.swift in Sources */,
 				BFD7725120D061FB003D3AF9 /* SaveState.swift in Sources */,
 				BFD7723F20D061FB003D3AF9 /* ControllerView.swift in Sources */,
+				BF1F24F320DADA360095A468 /* ControllerInputView.swift in Sources */,
 				BFD7723C20D061FB003D3AF9 /* SamplerFilter.swift in Sources */,
 				BFD7724020D061FB003D3AF9 /* ControllerDebugView.swift in Sources */,
 				BF7AB2C820D10FC200A678D6 /* RSTOperationQueue.swift in Sources */,
