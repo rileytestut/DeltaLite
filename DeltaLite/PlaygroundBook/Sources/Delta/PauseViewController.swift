@@ -147,7 +147,7 @@ private extension PauseViewController
             self.performSegue(withIdentifier: "cheats", sender: self)
         })
         
-        self.fastForwardItem = MenuItem(text: NSLocalizedString("Fast Forward", comment: ""), image: UIImage(named: "FastForward")?.withRenderingMode(.alwaysTemplate), action: { _ in })
+//        self.fastForwardItem = MenuItem(text: NSLocalizedString("Fast Forward", comment: ""), image: UIImage(named: "FastForward")?.withRenderingMode(.alwaysTemplate), action: { _ in })
         self.sustainButtonsItem = MenuItem(text: NSLocalizedString("Sustain Buttons", comment: ""), image: UIImage(named: "SustainButtons")?.withRenderingMode(.alwaysTemplate), action: { _ in })
     }
 }
