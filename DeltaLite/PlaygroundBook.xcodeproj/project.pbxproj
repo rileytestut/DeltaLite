@@ -143,6 +143,7 @@
 		BFD7727720D0624F003D3AF9 /* ZIPFoundation in Copy Delta Files */ = {isa = PBXBuildFile; fileRef = BFD7726720D06225003D3AF9 /* ZIPFoundation */; };
 		BFD7728F20D06914003D3AF9 /* NESEmulatorBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7728420D06914003D3AF9 /* NESEmulatorBridge.swift */; };
 		BFD7729020D06914003D3AF9 /* NES.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7728520D06914003D3AF9 /* NES.swift */; };
+		BFDA263D20DC15850097ABD4 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = BFDA263C20DC15840097ABD4 /* thumbnail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -383,6 +384,7 @@
 		BFD7728520D06914003D3AF9 /* NES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NES.swift; sourceTree = "<group>"; };
 		BFD7728620D06914003D3AF9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD7728720D06914003D3AF9 /* NESDeltaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESDeltaCore.h; sourceTree = "<group>"; };
+		BFDA263C20DC15840097ABD4 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +518,7 @@
 		5EF2F9792054B64800191409 /* PrivateResources */ = {
 			isa = PBXGroup;
 			children = (
+				BFDA263C20DC15840097ABD4 /* thumbnail.png */,
 				BFCE072720D23C850095048E /* Assets */,
 				5EF2F97E2054B6E400191409 /* ManifestPlist.strings */,
 				5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */,
@@ -1099,6 +1102,7 @@
 			files = (
 				BFCE073E20D23DFC0095048E /* Pause@2x.png in Resources */,
 				BFCE071D20D23C3F0095048E /* RSTPlaceholderView.xib in Resources */,
+				BFDA263D20DC15850097ABD4 /* thumbnail.png in Resources */,
 				BFCE071E20D23C3F0095048E /* Delta.xcdatamodeld in Resources */,
 				BFCE071F20D23C3F0095048E /* PausePresentationControllerContentView.xib in Resources */,
 				BFCE072020D23C3F0095048E /* PauseMenu.storyboard in Resources */,
